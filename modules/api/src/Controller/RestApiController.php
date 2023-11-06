@@ -24,9 +24,6 @@ use Drupal\Component\Utility\SafeMarkup;
     {
         $apiKey = $request->headers->get('api-key');
         //dd($apiKey);
-
-        
-
         if ($apiKey == $this->apiKey)
         {
             $query = \Drupal::entityQuery('node')
