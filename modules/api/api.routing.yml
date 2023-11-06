@@ -1,0 +1,9 @@
+api.news_api:
+  path: 'api/get_news_list.json'
+  defaults:
+    _controller: '\Drupal\api\Controller\RestApiController::getNewsList'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'    
+  options:
+    no_cache: 'TRUE'
